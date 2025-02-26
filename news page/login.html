@@ -74,18 +74,6 @@
             </form>
         </section>
     </main>
-    <script>
-        document.getElementById('loginForm').addEventListener('submit', function(event) {
-            event.preventDefault();
-            const email = document.getElementById('email').value;
-            const password = document.getElementById('password').value;
-            if (email && password) {
-                alert('Login successful!');
-                window.location.href = 'news.html'; // Redirect to news page
-            } else {
-                alert('Please fill all the fields.');
-            }
-        });
-    </script>
+     <script src="scripts.js"></script>
 </body>
 </html>

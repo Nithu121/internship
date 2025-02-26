@@ -135,22 +135,6 @@
     <footer>
        
     </footer>
-    <script>
-        document.getElementById('feedbackForm').addEventListener('submit', function(event) {
-            event.preventDefault();
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const message = document.getElementById('message').value;
-            if (name && email && message) {
-                alert('Thank you for your feedback!');
-                // Here you can add code to send the form data to the server
-                console.log('Name:', name);
-                console.log('Email:', email);
-                console.log('Message:', message);
-            } else {
-                alert('Please fill all the fields.');
-            }
-        });
-    </script>
+    <script src="feedback.js"></script>
 </body>
 </html>
