@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NITHESH SHETTY - Portfolio</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+        }
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        .project {
+            margin-bottom: 20px;
+        }
+        /* Feedback Form Styles */
+        .feedback {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .feedback form {
+            display: flex;
+            flex-direction: column;
+        }
+        .feedback label, .feedback input, .feedback textarea, .feedback button {
+            margin-bottom: 10px;
+        }
+        .feedback input, .feedback textarea {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .feedback button {
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .feedback button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>NITHESH SHETTY</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="intro">
+            <h2>Welcome to My Portfolio</h2>
+            <p>Hi, I'm NITHESH.</p>
+        </section>
+        <section class="about">
+            <h2>About Me</h2>
+            <p>Hi, I'm Nithesh, a passionate and dedicated software engineer with a strong background in developing innovative and efficient software solutions.</p>
+        </section>
+        <section class="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Weather Dashboard</h3>
+                <p>The Weather Dashboard is an interactive web application that allows users to get real-time weather updates for any city in the world. Users can search for a city and receive current weather conditions, as well as a 5-day forecast. The app leverages the OpenWeatherMap API to fetch weather data and provides a user-friendly interface with dynamic visuals.</p>
+            </div>
+            <div class="project">
+                <h3>Personal Blog</h3>
+                <p>The Personal Blog is a blogging platform that allows users to create, edit, and share blog posts. The platform includes features like user authentication, rich text editing, and the ability to add tags and categories to posts. The design is clean and minimalistic, ensuring a pleasant reading experience.</p>
+            </div>
+            <!-- Add more projects as needed -->
+        </section>
+        <section class="contact">
+            <h2>Contact</h2>
+            <p>Feel free to reach out to me at <a href="mailto:nithushetty121@gmail.com">nithushetty121@gmail.com</a></p>
+        </section>
+        <section class="feedback">
+            <h2>Feedback</h2>
+            <form id="feedbackForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <br>
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+       
+    </footer>
+    <script src="feedback.js"></script>
+</body>
+</html>
