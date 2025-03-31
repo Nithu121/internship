@@ -1,0 +1,3 @@
+[submodule "bank-app"]
+	path = bank-app
+	url = https://github.com/Nithu121/internship.git
